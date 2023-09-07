@@ -1,0 +1,12 @@
+<form [formGroup]="registrationForm" (submit)="onSubmit()">
+  <label>Name:</label>
+  <input type="text" formControlName="name" required>
+
+  <label>Email:</label>
+  <input type="email" formControlName="email" required>
+
+  <label>Password:</label>
+  <input type="password" formControlName="password" required>
+
+  <button type="submit">Register</button>
+</form>
